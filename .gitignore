@@ -1,0 +1,25 @@
+node_modules/
+dist/
+
+# Session logs produced by the extractors
+session_log*.md
+codex_session_log*.md
+copilot_session_log*.md
+claude_session_log_raw*.json
+codex_session_log_raw*.json
+copilot_session_log_raw*.json
+
+scripts/__pycache__/
+.pytest_cache/
+
+backend/log/*
+!backend/log/.keep
+backend/storage/*
+!backend/storage/.keep
+backend/tmp/*
+!backend/tmp/.keep
+!backend/tmp/pids/
+!backend/tmp/pids/.keep
+backend/config/master.key
+
+.DS_Store

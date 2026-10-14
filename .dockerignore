@@ -1,0 +1,9 @@
+.git
+.env
+.env.*
+**/*.key
+**/node_modules
+backend/log/*
+backend/tmp/*
+backend/storage
+frontend/dist
