@@ -46,6 +46,16 @@ their work. They are one-shot services, so seeing them stopped is expected.
 - **The frontend waits** — it starts only after Rails is healthy, and Rails starts only after
   PostgreSQL is healthy and the migration finishes. Bring up the whole stack together.
 
+- **Windows: a script fails with `bad interpreter`, `$'\r': command not found`, or `no such file
+  or directory`.** Your copy was cloned before we fixed line endings, and `git pull` doesn't
+  rewrite files you already have. Delete the folder and clone again, or run this from the repo
+  root (it discards any local changes):
+
+  ```bash
+  git rm -r --cached -q .
+  git reset --hard
+  ```
+
 Tear down with `docker compose down`. Leave the images in place — keeping them cached is the
 point.
 
